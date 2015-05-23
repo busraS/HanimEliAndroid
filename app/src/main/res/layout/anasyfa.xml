@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HANIMELİ"
+        android:id="@+id/textView35"
+        android:textSize="40dp"
+        android:textColor="#ffff5f61"
+        android:layout_marginBottom="44dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/textView37"
+        android:layout_toEndOf="@+id/textView37" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/asci"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yemek Ekle"
+        android:id="@+id/btnyemekekleanasayfa"
+        android:background="#fffefdff"
+        android:textColor="#ffff5f61"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignRight="@+id/textView36"
+        android:layout_alignEnd="@+id/textView36"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="siparişler"
+        android:id="@+id/btnsiparisanasyfa"
+        android:textColor="#ffff5f61"
+        android:background="#ffffffff"
+        android:layout_alignTop="@+id/btnyemekekleanasayfa"
+        android:layout_toRightOf="@+id/imageView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yemek listesi"
+        android:id="@+id/btnyemeklistesianasyfa"
+        android:background="#ffffffff"
+        android:textColor="#ffff5f61"
+        android:layout_alignTop="@+id/btnsiparisanasyfa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnsiparisanasyfa"
+        android:layout_toEndOf="@+id/btnsiparisanasyfa" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/kisi"
+        android:layout_below="@+id/btnyemekekleanasayfa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="Üye"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/btnyemekekleanasayfa"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_marginTop="29dp"
+        android:layout_alignRight="@+id/btnsiparisanasyfa"
+        android:layout_alignEnd="@+id/btnsiparisanasyfa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail : "
+        android:id="@+id/textView36"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/btnsiparisanasyfa"
+        android:layout_toStartOf="@+id/btnsiparisanasyfa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel.No. :"
+        android:id="@+id/textView37"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView36"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yaşadığı Yer :"
+        android:id="@+id/textView38"
+        android:textColor="@android:color/black"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adres :"
+        android:id="@+id/textView39"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView38"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resim Ekle "
+        android:id="@+id/textView40"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView41"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resim :"
+        android:id="@+id/textView41"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kaydet"
+        android:id="@+id/button4"
+        android:textSize="10dp"
+        android:textColor="#ffff5f61"
+        android:background="#ffffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İptal"
+        android:id="@+id/button5"
+        android:background="#ffffffff"
+        android:textColor="#ffff5f61"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:textSize="10dp" />
+
+</RelativeLayout>

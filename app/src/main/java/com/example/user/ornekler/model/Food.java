@@ -50,7 +50,7 @@ public class Food {
             return preparationTime;
         }
 
-        public void setPreparationTime(short preparationTime) {
+        public void setPreparationTime(Short preparationTime) {
             this.preparationTime = preparationTime;
         }
 
@@ -80,5 +80,7 @@ public class Food {
         }
 
 
+    public void setPreparationTime(String s) {
 
+    }
 }

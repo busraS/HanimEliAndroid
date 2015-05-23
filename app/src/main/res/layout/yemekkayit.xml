@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/images"
+    android:background="@drawable/anas"
     android:id="@+id/">
 
     <TextView
@@ -32,11 +32,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kategorisi"
+        android:text="Kategori*"
         android:id="@+id/textView17"
         android:textColor="@android:color/black"
         android:textSize="25dp"
-        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignBottom="@+id/txtkategoriyemekkayit"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -47,13 +47,13 @@
         android:id="@+id/textView18"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="28dp"
+        android:textSize="35dp"
         android:textColor="@android:color/black" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hazırlanma Süresi"
+        android:text="Hazırlık Süresi*"
         android:id="@+id/textView19"
         android:layout_below="@+id/textView17"
         android:layout_alignParentLeft="true"
@@ -65,7 +65,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Birim Miktarı"
+        android:text="Birim Miktar*"
         android:id="@+id/textView20"
         android:layout_below="@+id/textView19"
         android:layout_alignLeft="@+id/textView17"
@@ -79,11 +79,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fiyatı"
+        android:text="Birim Fiyat*"
         android:id="@+id/textView21"
         android:textSize="25dp"
         android:textColor="@android:color/black"
-        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignBottom="@+id/txtfiyatyemekkayit"
         android:layout_alignLeft="@+id/textView20"
         android:layout_alignStart="@+id/textView20"
         android:layout_marginTop="10dp" />
@@ -91,19 +91,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adı"
+        android:text="Adı*"
         android:id="@+id/textView22"
         android:textColor="@android:color/black"
         android:textSize="25dp"
-        android:layout_below="@+id/textView24"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView18" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/txtadiyemekkayit"
         android:layout_below="@+id/textView18"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -115,19 +115,19 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
+        android:id="@+id/txthakkindayemekkayit"
+        android:layout_below="@+id/txtadiyemekkayit"
+        android:layout_alignRight="@+id/txtadiyemekkayit"
+        android:layout_alignEnd="@+id/txtadiyemekkayit"
         android:layout_toRightOf="@+id/textView20"
         android:layout_toEndOf="@+id/textView20" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
+        android:id="@+id/txtmalzemeyemekkayit"
+        android:layout_alignRight="@+id/txthakkindayemekkayit"
+        android:layout_alignEnd="@+id/txthakkindayemekkayit"
         android:layout_alignBottom="@+id/textView16"
         android:layout_toRightOf="@+id/textView20"
         android:layout_toEndOf="@+id/textView20" />
@@ -135,39 +135,39 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
+        android:id="@+id/txtkategoriyemekkayit"
+        android:layout_below="@+id/txtmalzemeyemekkayit"
+        android:layout_alignRight="@+id/txtmalzemeyemekkayit"
+        android:layout_alignEnd="@+id/txtmalzemeyemekkayit"
         android:layout_toEndOf="@+id/textView20"
         android:layout_toRightOf="@+id/textView20" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
+        android:id="@+id/txthsuresiyemekkayit"
         android:layout_alignBottom="@+id/textView19"
         android:layout_toRightOf="@+id/textView19"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toLeftOf="@+id/textView25"
+        android:layout_toStartOf="@+id/textView25" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText7"
-        android:layout_below="@+id/editText6"
+        android:id="@+id/txtmiktaryemekkayit"
+        android:layout_below="@+id/txthsuresiyemekkayit"
         android:layout_toRightOf="@+id/textView20"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText8"
+        android:id="@+id/txtfiyatyemekkayit"
+        android:layout_toRightOf="@+id/textView20"
         android:layout_below="@+id/textView20"
-        android:layout_toRightOf="@+id/textView20"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toLeftOf="@+id/textView25"
+        android:layout_toStartOf="@+id/textView25" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -186,44 +186,62 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/yemek"
-        android:layout_below="@+id/editText8"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView20"
-        android:layout_toEndOf="@+id/textView20" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aşçı Adı"
-        android:id="@+id/textView24"
-        android:textColor="@android:color/black"
-        android:textSize="25dp"
-        android:layout_below="@+id/textView18"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText9"
-        android:layout_alignBottom="@+id/textView24"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/txtfiyatyemekkayit"
+        android:layout_alignLeft="@+id/txtfiyatyemekkayit"
+        android:layout_alignStart="@+id/txtfiyatyemekkayit" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="KAYDET"
-        android:id="@+id/button"
+        android:id="@+id/btnkaydetyemekkayit"
         android:textColor="@android:color/black"
-        android:textSize="25dp"
+        android:textSize="15dp"
         android:background="#fffefdff"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView15"
-        android:layout_alignEnd="@+id/textView15" />
+        android:layout_toEndOf="@+id/txtfiyatyemekkayit"
+        android:layout_toRightOf="@+id/txtfiyatyemekkayit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kg,gr veya kişi sayısı olarak"
+        android:id="@+id/textView25"
+        android:layout_alignTop="@+id/txtmiktaryemekkayit"
+        android:layout_toRightOf="@+id/txtmiktaryemekkayit"
+        android:layout_toEndOf="@+id/txtmiktaryemekkayit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saat:Dakika "
+        android:id="@+id/textView26"
+        android:layout_alignBottom="@+id/txthsuresiyemekkayit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/txthsuresiyemekkayit"
+        android:layout_toEndOf="@+id/txthsuresiyemekkayit"
+        android:layout_alignTop="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TL"
+        android:id="@+id/textView27"
+        android:layout_alignRight="@+id/textView25"
+        android:layout_alignEnd="@+id/textView25"
+        android:layout_toRightOf="@+id/txtfiyatyemekkayit"
+        android:layout_toEndOf="@+id/txtfiyatyemekkayit"
+        android:layout_above="@+id/imageView"
+        android:layout_alignTop="@+id/textView21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Alanlar Boş Geçilemez"
+        android:id="@+id/textView24"
+        android:layout_alignTop="@+id/btnkaydetyemekkayit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
