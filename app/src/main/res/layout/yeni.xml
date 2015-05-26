@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anas"
+
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:text=" PROFİL GÜNCELLE"
+        android:layout_marginLeft="50dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/lyd1"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/txt1"
+           android:text="E-Mail Adresi"
+           android:textSize="25dp"
+           android:textColor="@android:color/black"
+           android:layout_marginTop="65dp" />
+
+       <EditText
+           android:layout_width="181dp"
+           android:layout_height="match_parent"
+           android:id="@+id/txtemailyeni"
+           android:textColor="@android:color/black"
+
+           android:layout_weight="0.10">
+       </EditText>
+       </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/lyd2"
+       android:orientation="horizontal"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/txt2"
+           android:layout_marginTop="25dp"
+           android:text="Telefon No"
+           android:textColor="@android:color/black"
+           android:textSize="25dp" />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/txttelnoyeni"
+           android:textColor="@android:color/black">
+           </EditText>
+
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyd3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:layout_marginTop="25dp"
+            android:text="Yaşadığı Yer"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtyasadigiyeryeni"
+            android:textColor="@android:color/black">
+            </EditText>
+        </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/lyd4"
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Adres"
+             android:textColor="@android:color/black"
+             android:textSize="25dp"
+             android:layout_marginTop="25dp"
+             android:id="@+id/txt4"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/txtadresyeni"
+             android:textColor="@android:color/black"
+
+             >
+             </EditText>
+
+         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyd5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resim Ekle "
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="25dp" />
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/ımgresimyeni"
+           android:src="@drawable/kisi"
+           >
+           </ImageView>
+
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnguncelleyeni"
+        android:text="Güncelle"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="130dp"
+
+
+        />
+
+
+
+</LinearLayout>
+

@@ -15,19 +15,20 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
 
-    ImageButton kayitOl;
+   Button btnkayitolgiris;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     
-        kayitOl = (ImageButton)findViewById(R.id.kayitButton);
+     btnkayitolgiris = (Button)findViewById(R.id.btnkayitolgiris);
 
-        kayitOl.setOnClickListener(new View.OnClickListener() {
+        btnkayitolgiris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, KayitActivity.class);
                 startActivity(intent);
+
 
             }
         });

@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/anas"
-    android:id="@+id/">
+    android:id="@+id/yemekkayit">
 
     <TextView
         android:layout_width="wrap_content"
@@ -186,9 +186,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/yemek"
-        android:layout_below="@+id/txtfiyatyemekkayit"
-        android:layout_alignLeft="@+id/txtfiyatyemekkayit"
-        android:layout_alignStart="@+id/txtfiyatyemekkayit" />
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_toLeftOf="@+id/btnkaydetyemekkayit"
+        android:layout_toStartOf="@+id/btnkaydetyemekkayit" />
 
     <Button
         android:layout_width="wrap_content"

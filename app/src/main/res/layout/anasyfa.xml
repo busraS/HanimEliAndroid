@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff">
+    android:background="@android:color/white"
 
-    <TextView
+    android:weightSum="1">
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HANIMELİ"
-        android:id="@+id/textView35"
-        android:textSize="40dp"
-        android:textColor="#ffff5f61"
-        android:layout_marginBottom="44dp"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_toRightOf="@+id/textView37"
-        android:layout_toEndOf="@+id/textView37" />
+        android:id="@+id/lyda1"
+        android:orientation="horizontal"
+        >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:src="@drawable/asci"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/asci" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HANIMELİ"
+            android:id="@+id/textView35"
+            android:textSize="40dp"
+            android:textColor="#ffff5f61" />
 
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lyda2"
+    android:orientation="horizontal">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yemek Ekle"
         android:id="@+id/btnyemekekleanasayfa"
         android:background="#fffefdff"
-        android:textColor="#ffff5f61"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignRight="@+id/textView36"
-        android:layout_alignEnd="@+id/textView36"
-        android:layout_marginTop="27dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColor="#ffff5f61"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -45,9 +46,7 @@
         android:text="siparişler"
         android:id="@+id/btnsiparisanasyfa"
         android:textColor="#ffff5f61"
-        android:background="#ffffffff"
-        android:layout_alignTop="@+id/btnyemekekleanasayfa"
-        android:layout_toRightOf="@+id/imageView2" />
+        android:background="#ffffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -55,122 +54,129 @@
         android:text="yemek listesi"
         android:id="@+id/btnyemeklistesianasyfa"
         android:background="#ffffffff"
-        android:textColor="#ffff5f61"
-        android:layout_alignTop="@+id/btnsiparisanasyfa"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/btnsiparisanasyfa"
-        android:layout_toEndOf="@+id/btnsiparisanasyfa" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/kisi"
-        android:layout_below="@+id/btnyemekekleanasayfa"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="Üye"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/btnyemekekleanasayfa"
-        android:layout_alignLeft="@+id/textView36"
-        android:layout_alignStart="@+id/textView36"
-        android:layout_marginTop="29dp"
-        android:layout_alignRight="@+id/btnsiparisanasyfa"
-        android:layout_alignEnd="@+id/btnsiparisanasyfa" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-Mail : "
-        android:id="@+id/textView36"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/editText"
-        android:layout_toLeftOf="@+id/btnsiparisanasyfa"
-        android:layout_toStartOf="@+id/btnsiparisanasyfa" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tel.No. :"
-        android:id="@+id/textView37"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/textView36"
-        android:layout_alignLeft="@+id/textView36"
-        android:layout_alignStart="@+id/textView36"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Yaşadığı Yer :"
-        android:id="@+id/textView38"
-        android:textColor="@android:color/black"
-        android:layout_alignBottom="@+id/imageView3"
-        android:layout_alignLeft="@+id/textView37"
-        android:layout_alignStart="@+id/textView37" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adres :"
-        android:id="@+id/textView39"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/textView38"
-        android:layout_alignLeft="@+id/textView38"
-        android:layout_alignStart="@+id/textView38"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resim Ekle "
-        android:id="@+id/textView40"
-        android:textColor="@android:color/black"
-        android:layout_above="@+id/textView41"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="23dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resim :"
-        android:id="@+id/textView41"
-        android:textColor="@android:color/black"
-        android:layout_above="@+id/button4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="24dp" />
-
+        android:textColor="#ffff5f61" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="kaydet"
-        android:id="@+id/button4"
-        android:textSize="10dp"
-        android:textColor="#ffff5f61"
+        android:text="Yorumlar "
+        android:id="@+id/btnyorumlaranasayfa"
         android:background="#ffffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColor="#ffff5f61"/>
+
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/lyda3"
+       android:orientation="horizontal"
+       android:layout_weight="0.51">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/imageView3"
+           android:src="@drawable/kisi" />
+       <LinearLayout
+           android:layout_width="296dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <EditText
+               android:layout_width="67dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/editText"
+               android:text="Üye"
+               android:textColor="@android:color/black"
+               >
+           </EditText>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="E-Mail : "
+               android:id="@+id/textView36"
+               android:textColor="@android:color/black"
+               android:layout_marginTop="10dp"
+
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tel.No. :"
+               android:id="@+id/textView37"
+               android:textColor="@android:color/black"
+               android:layout_marginTop="10dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Yaşadığı Yer :"
+               android:id="@+id/textView38"
+               android:textColor="@android:color/black"
+               android:layout_marginTop="10dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Adres :"
+               android:id="@+id/textView39"
+               android:textColor="@android:color/black"
+               android:layout_marginTop="10dp" />
+
+       </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="İptal"
+        android:text="Çıkış"
         android:id="@+id/button5"
         android:background="#ffffffff"
         android:textColor="#ffff5f61"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toRightOf="@+id/button4"
-        android:layout_toEndOf="@+id/button4"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnyemeklistesianasyfa"
+        android:layout_alignEnd="@+id/btnyemeklistesianasyfa"
+        android:layout_gravity="right" />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil Güncelle"
+        android:id="@+id/button"
+        android:background="#ffffffff"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView39"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:textColor="#ffff5f61" />
+
+</LinearLayout>
