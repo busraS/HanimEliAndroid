@@ -57,6 +57,7 @@ public class YemekKayit extends Activity {
 
 
 
+
                Intent intent = new Intent(YemekKayit.this,AnaSayfa .class);
                startActivity(intent);
 
