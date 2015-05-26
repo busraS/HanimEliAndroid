@@ -43,7 +43,8 @@ public class AnaSayfa extends Activity {
         btnyorumlaranasayfa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+             Intent intent = new Intent(AnaSayfa.this ,YorumActivity.class);
+                startActivity(intent);
             }
         });
 
