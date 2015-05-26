@@ -18,12 +18,13 @@
             android:id="@+id/imageView2"
             android:src="@drawable/asci" />
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="212dp"
             android:layout_height="wrap_content"
             android:text="HANIMELİ"
             android:id="@+id/textView35"
             android:textSize="40dp"
-            android:textColor="#ffff5f61" />
+            android:textColor="#ffff5f61"
+            android:layout_gravity="center_vertical" />
 
         </LinearLayout>
 
@@ -31,7 +32,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/lyda2"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,8 +72,9 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/lyda3"
+       android:layout_marginTop="20dp"
        android:orientation="horizontal"
-       android:layout_weight="0.51">
+       android:layout_weight="0.30">
        <ImageView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -80,7 +83,9 @@
        <LinearLayout
            android:layout_width="296dp"
            android:layout_height="wrap_content"
-           android:orientation="vertical">
+           android:orientation="vertical"
+           android:layout_marginLeft="10dp"
+           >
            <EditText
                android:layout_width="67dp"
                android:layout_height="wrap_content"
@@ -89,94 +94,129 @@
                android:textColor="@android:color/black"
                >
            </EditText>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="E-Mail : "
+                  android:id="@+id/textView36"
+                  android:textColor="@android:color/black"
+                  android:layout_marginTop="10dp"/>
+              <TextView
+                  android:layout_width="164dp"
+                  android:layout_height="wrap_content"
+                  android:text="          e-mail"
+                  android:textColor="@android:color/black"
+                  android:id="@+id/emailanasyfatextview"
+                  android:layout_marginTop="10dp"
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="E-Mail : "
-               android:id="@+id/textView36"
-               android:textColor="@android:color/black"
-               android:layout_marginTop="10dp"
+                  />
 
-               />
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Tel.No. :"
-               android:id="@+id/textView37"
-               android:textColor="@android:color/black"
-               android:layout_marginTop="10dp"
-               />
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Yaşadığı Yer :"
-               android:id="@+id/textView38"
-               android:textColor="@android:color/black"
-               android:layout_marginTop="10dp"
-               />
+          </LinearLayout>
 
-           <TextView
-               android:layout_width="wrap_content"
+           <LinearLayout
+               android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:text="Adres :"
-               android:id="@+id/textView39"
-               android:textColor="@android:color/black"
-               android:layout_marginTop="10dp" />
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Tel.No. :"
+                   android:id="@+id/textView37"
+                   android:textColor="@android:color/black"
+                   android:layout_marginTop="10dp"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="          tel_no"
+                   android:id="@+id/telnoanasayfatextview"
+                   android:textColor="@android:color/black"
+                   android:layout_marginTop="10dp"
+                   />
+               </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Yaşadığı Yer :"
+                  android:id="@+id/textView38"
+                  android:textColor="@android:color/black"
+                  android:layout_marginTop="10dp"
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/yasadigiyeranasyfatextview"
+                  android:text=" yasadigi_yer"
+                  android:textColor="@android:color/black"
+                  android:layout_marginTop="10dp"
+                  />
+
+
+              </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Adres :"
+                   android:id="@+id/textView39"
+                   android:textColor="@android:color/black"
+                   android:layout_marginTop="10dp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="             adres"
+                   android:textColor="@android:color/black"
+                   android:id="@+id/adresanasyfatextview"
+                   android:layout_marginTop="10dp"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" >
+
+                   <Button
+                       android:layout_width="165dp"
+                       android:layout_height="36dp"
+                       android:text="Profil Güncelle"
+                       android:id="@+id/btnguncelleanasyfa"
+                       android:background="#ffffffff"
+                       android:textSize="15dp"
+                       android:layout_marginTop="45dp"
+
+                       android:textColor="#ffff5f61" />
+           </LinearLayout>
+
 
        </LinearLayout>
 
 </LinearLayout>
 
 
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        >
-
-
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
-
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Çıkış"
-        android:id="@+id/button5"
+        android:id="@+id/btncikisanasayfa"
         android:background="#ffffffff"
         android:textColor="#ffff5f61"
-        android:textSize="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/btnyemeklistesianasyfa"
-        android:layout_alignEnd="@+id/btnyemeklistesianasyfa"
-        android:layout_gravity="right" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profil Güncelle"
-        android:id="@+id/button"
-        android:background="#ffffffff"
         android:textSize="15dp"
-        android:layout_below="@+id/textView39"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="36dp"
-        android:layout_toLeftOf="@+id/textView35"
-        android:layout_toStartOf="@+id/textView35"
-        android:textColor="#ffff5f61" />
+        android:layout_marginTop="100dp"
 
+        />
 </LinearLayout>
